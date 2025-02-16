@@ -2,6 +2,12 @@ The course with Razvan Cioarga. The lab with him and Bogdan Anca. I strongly rec
 
 The course won't be really useful for the exam, and the lab will consist of some 6 (or something like that) quizes from theoretical aspects from the course. 
 We don't have the quizes, but some models are available on the Google Drive link I've posted at the beggining of the repository.
+*First quiz: Initial C test (f-ing questions from C, this test will be during the first lab and it WILL count to the lab grade)
+*Second quiz: Searching (this is easier)
+*Third quiz: Array Sorting Methods, with the exceptions of the ones from the fourth quiz
+*Fourth quiz: Merge Sort, Radix Sort, Bin Sort
+*Fifth quiz: Boyer-Moore and Knuth-Morris-Pratt (String searching)
+*Sixth quiz: Lists and Recursion
 
 The exam will consist of 3 parts (you need to get a grade >=5.00, 4.99 is not a passing grade for each part):
 *first part: a quiz of 10 questions, similar to the ones from the lab
