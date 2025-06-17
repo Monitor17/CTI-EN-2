@@ -1,0 +1,148 @@
+Trees
+For a BST image:
+
+Is the BST perfectly balanced? Explain your answer.
+
+Is the BST height balanced ? (an AVL tree)? Explain your answer.
+
+Which is the sequence of nodes in preorder/postorder/inorder traversal for the BST in the figure above?
+
+ 
+
+
+When a Binary Search Tree   is traversed in pre-order  the sequence of values obtained is 6, 4, 2, 3, 5, 7, 9, 8.  Determine the sequence of nodes obtained if the same BST is traversed in post-order.
+
+ 
+
+Suppose that we have numbers between 1 and 100 in a binary search tree and want to search for the number 55.
+Is it possible that the sequence of nodes on  the search path is the following one? Justfy your answer. 9, 85, 47, 68, 43, 57, 55
+
+Consider the following assertion: In an AVL tree, after a new node is inserted, in some cases there could be several balance operations needed : a balance operation for every node on the path up to the root. True or false? Explain your answer and give a detailed proof.
+
+
+ 
+
+What is the height of the tallest AVL tree that you could build from 100 nodes? EXPLAIN, do not just give a number.
+
+ 
+
+ 
+
+Which is the asymptotic complexity for the operation of inserting a node in a BST ? Explain.
+
+ 
+
+ 
+
+Which is the asymptotic complexity for the operation of inserting a node in a AVL tree ? Explain.
+
+ 
+
+ 
+
+ 
+
+We have an initially empty B-Tree with mindegree t=2 (non-root nodes may have minimum 2 and maximum 4 children) and the sequence of keys 9, 0, 8, 1, 7, 2, 6,  3,  5, 4 is inserted. Represent the tree after each insertion and explain.
+
+ 
+
+*
+
+ 
+
+We have an initially empty B-Tree with mindegree t=3 (non-root nodes may have minimum 3 and maximum 6 children) and the sequence of keys 9, 0, 8, 1, 7, 2, 6,  3,  5, 4 is inserted. Represent the tree after each insertion and explain. 
+
+ 
+
+*
+
+ 
+
+What is the height of the tallest B-Tree of mindegree t=3 (each non-root node has minimum 3 and maximum 6 children) tree that you could build to contain a total of 50 values? EXPLAIN, do not just give a number.
+
+ 
+
+*
+
+ 
+
+ 
+
+What is the height of the shortest B-Tree of mindegree t=3 (each non-root node has minimum 3 and maximum 6 children) tree that you could build to contain 100 values? EXPLAIN, do not just give a number.
+
+ 
+
+ 
+
+*
+
+What can be the maximum depth (height) of a Trie Tree containing n strings and m as the maximum string  length? Explain why.
+
+ 
+
+ 
+
+Consider the set of words:  act, and, artist, cat, catamaran, catering, data, door.  Represent a trie tree containg these words.
+
+ 
+
+ 
+
+Describe an example of usage  where trie trees are better  suitable than BST.
+
+ 
+
+ 
+
+Which datastructure is good for representing a Sorted Dictionary on disk? Explain.
+
+ 
+
+ 
+
+Show how the input text DOODLEDOO is encoded using Huffman encoding.
+
+
+Graphs:
+Define the concept Minimum Spanning Tree of a connected graph.
+
+How is it better  to implement  Prim's algorithm: using only an array for finding the minimum distance or using a MinHeap based PriorityQueue? Give a detailed justification of your answer.
+
+ 
+
+ 
+
+Consider the following assertion: If a graph's edges all have distinct weights, the shortest edge MUST always belong to the MST. True or false? Explain you answer.  If you think that it is true, give a general proof. If you think that it is false, it is enough to give a counterexample.
+
+ 
+
+ 
+
+Consider the following assertion: If a graph's edges all have distinct weights, the longest edge will NEVER belong to the MST. True or false? Explain your ansewer. If you think that it is true, give a general proof. If you think that it is false, it is enough to give a counterexample.
+
+Consider the following assertion: You can rescale the weights of the edges by adding the same positive constant to all of them without affecting the shortest paths. True or false? Explain your answer. If you think that it is true, give a general proof. If you think that it is false, it is enough to give a counterexample.
+
+ 
+
+ 
+
+Consider the following assertion: You can obtain as results the longest paths if you "reverse" Dijkstra algorithm: initialize distance array with -infinity and change distance comparison into if (distance[v] < distance[u] + weight[u][v]) { distance[v] = distance[u] + weight[u][v] } True or false? Explain your answer. If you think that it is true, give a general proof. If you think that it is false, it is enough to give a counterexample.
+
+ 
+
+ 
+
+ 
+
+Consider the following assertion: You can obtain a correct MST applying Prim's algorihm on a graph where the weights can have also negative values. True or false? Explain your answer. If you think that it is true, give a general proof. If you think that it is false, it is enough to give a counterexample.
+
+ 
+
+ 
+
+Each of the next two parts outlines an MST algorithm for graphs with unique edge weights. In each case, say whether this is a correct MST algorithm or not. If the algorithm is correct give a general proof. If the algorithm  is not correct, give a counterexample when it does not work. 
+
+[Divide-and-Conquer MST] :  The algorithm uses a simple Divide-and-Conquer strategy: We have a graph G=(V, E) with set of vertices V and set of edges E.  Divide the set V of vertices arbitrarily into disjoint sets V1 and V2, each of size roughly V/2. Define graph G1 =(V1,E1), where E1 is the subset of E for which both endpoints are in V1. Define G2 =(V2,E2) analogously. 
+Recursively find (unique) MSTs for both G1 and G2; call them T1 and T2. Then find  the (unique) lightest edge that crosses the cut between the two sets of vertices V1 and V2, and add that to form the final spanning tree T .
+
+ [Cycle-Breaking MST] The algorithm operates in phases. In each phase, the algorithm first finds a  simple cycle in the graph. Then it identifies the heaviest edge on the  cycle, and removes that edge. Phases continue until the graph contains no cycles, and have the minimum spanning tree. 
